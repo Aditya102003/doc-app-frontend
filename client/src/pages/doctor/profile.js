@@ -19,7 +19,7 @@ const Profile = () => {
     try {
       dispatch(showLoading());
       const res = await axios.post(
-        "/api/v1/doctor/updateProfile",
+        "https://doca-pllq.onrender.com/api/v1/doctor/updateProfile",
         {
           ...values,
           userId: user._id,
