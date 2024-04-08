@@ -17,7 +17,7 @@ const Register = () => {
   const onfinishHandler= async (values)=>{
     try {
       dispatch(showLoading());
-      const res = await axios.post("https://doca-pllq.onrender.com/api/v1/user/register",values);
+      const res = await axios.post("https://doc-app-frontend-tt7z.vercel.app/api/v1/user/register",values);
 
       dispatch(hideLoading());
       if(res.data.success){

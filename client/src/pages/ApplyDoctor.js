@@ -13,7 +13,7 @@ const ApplyDoctor = () => {
     const handleFinish = async(values) =>{
         try{
 dispatch(showLoading())
-const res= await axios.post('https://doca-pllq.onrender.com/api/v1/user/apply-doctor',{...values,userId:user._id},{
+const res= await axios.post('https://doc-app-frontend-tt7z.vercel.app/api/v1/user/apply-doctor',{...values,userId:user._id},{
 headers:{
     Authorization:`Bearer ${localStorage.getItem('token')}`
 }

@@ -17,7 +17,7 @@ export default function ProtectedRoute({children}) {
 const getUser = async()=>{
    try{
 dispatch(showLoading())
-const res=await axios.post('https://doca-pllq.onrender.com/api/v1/user/getUserData',
+const res=await axios.post('https://doc-app-frontend-tt7z.vercel.app/api/v1/user/getUserData',
 { token: localStorage.getItem('token')},
 {
    headers:{

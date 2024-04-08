@@ -15,7 +15,7 @@ const NotificationPage = () => {
     try {
       dispatch(showLoading());
       const res = await axios.post(
-        "https://doca-pllq.onrender.com/api/v1/user/get-all-notification",
+        "https://doc-app-frontend-tt7z.vercel.app/api/v1/user/get-all-notification",
         {
           userId: user._id,
         },
@@ -43,7 +43,7 @@ const NotificationPage = () => {
     try {
       dispatch(showLoading());
       const res = await axios.post(
-        "https://doca-pllq.onrender.com/api/v1/user/delete-all-notification",
+        "https://doc-app-frontend-tt7z.vercel.app/api/v1/user/delete-all-notification",
         { userId: user._id },
         {
           headers: {

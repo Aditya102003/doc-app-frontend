@@ -9,7 +9,7 @@ const HomePage = () => {
   const getUserData = async () => {
     try {
       const res = await axios.get(
-        "https://doca-pllq.onrender.com/api/v1/user/getAllDoctors",
+        "https://doc-app-frontend-tt7z.vercel.app/api/v1/user/getAllDoctors",
 
         {
           headers: {
